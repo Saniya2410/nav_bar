@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> navbar </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+           width: 100%;
+           padding: 10px;
+           top: 0;
+           position: sticky;
+           z-index: 100;
+           display: flex;
+           align-items: center;
+           background-color: black;
+           color: white;
+        }
+        .icon{
+            height: 70px;
+            width: 70px;
+        }
+        .menu{
+            margin-left:800px;
+            /* display: flex; 
+            /* display:inline-block; */
+            flex-wrap: wrap;
+            text-decoration: none;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+        .menu li{
+            display: inline-block;
+        }
+        
+        .menu li:hover{
+            background-color: orange;
+            color: black;
+
+        }
+        .search{
+            float: right;
+            text-align: center;
+            justify-content: center;
+        }
+     .menu-item{
+        margin-left: 100px;
+        color:white;
+        text-decoration: none;
+        font-size:20px;
+        margin:0 10px;
+
+     }
+     .search-box{
+        padding:10px 20px;
+        border-radius:70px;
+        border:none;
+        width:70px;
+        height:50px;
+     }
+     .menu-icon{
+    height:50px;
+    display:none;
+}
+ 
+
+
+     /* mobile */
+@media (max-width:600px)
+{
+    .search-box{
+    display: none;
+}
+.menu{
+    display:none;
+}
+.menu-icon{
+display: block;
+padding-left:150px;
+    }
+    
+}
+
+@media(min-width:601px) and (max-width:800px){
+
+}
+
+@media (min-width:801px) and (max-width:1200px){
+    .search-box{
+        display:name;
+    }
+ .menu{
+    margin-left:400px;
+ }
+
+}
+
+  </style>
+   
+<body>
+        <!-- <div class="nav-logo">
+            <img src="logo.png">
+        </div> -->
+        <div class="navbar">
+                <img src="img/balanced-diet.png" class="icon">
+
+            <div class="menu">
+                <li><a href="#" class="menu-item">Indian</a></li>
+                <li><a href="#"class="menu-item"> Western </a></li>
+                <li><a href="#" class="menu-item">Chinese</a></li>
+                <li><a href="#" class="menu-item">Contact</a></li>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                </div>
+                <div>
+                <img src="img/preferences.png" class="menu-icon" alt="menu-icon"/>
+            </div>
+
+        </div>
+        
+            
+        
+        </div>
+</body>
+</html>
